@@ -51,7 +51,7 @@ const activateResetBtn = function (value) {
 };
 
 person.oninput = function () {
-  if (Number(tipCustom.value) > 100) return;
+  if (Number(tipCustom.value) > 100 || Number(tipCustom.value) < 0) return;
   else {
     calculateTipAndRender(tipCustom.value / 100);
   }
